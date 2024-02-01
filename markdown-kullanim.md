@@ -6,7 +6,7 @@ date: "30/01/2024"
 
 # Giriş 
 
-Bu belgede markdown kullanımınnın öğretilmesi amaçlanmıştır.
+Bu belgede markdown kullanımının öğretilmesi amaçlanmıştır.
 
 ## Üzerinde Durulacak Konular
 
@@ -29,8 +29,7 @@ Markdown kullanırken başlık eklemek amacıyla `#` kullanılır. Örneğin `# 
 
 ### Alt Başlıklar Ekleme
 
-
-Başlığın altına alt başlıklar eklenmek isteniyorsa, oluşturulacak her alt başlık için fazladan bir `#` eklenir. Örneğin staj başlığı altında `zrounlu staj 1` yazılması istendiği zaman, bunun `## zorunlu staj 1` şeklinde yazılması gerekir. 
+Başlığın altına alt başlıklar eklenmek isteniyorsa, oluşturulacak her alt başlık için fazladan bir `#` eklenir. Örneğin staj başlığı altında `zorunlu staj 1` yazılması istendiği zaman, bunun `## zorunlu staj 1` şeklinde yazılması gerekir. 
 
 Eğer `zorunlu staj 1` alt başlığının alt başlıkları varsa yazılacak alt başlıklar için fazladan bir `#` daha eklenir. Örneğin bu alt başlıklardan biri `1. gün` olsun. Bunun başlık şeklinde yazılması için `### 1. gün ` şeklinde yazılması gerekir. 
 
@@ -46,11 +45,9 @@ Kelime veya cümlenin kalın yazılması için;
 **kelime** ya da __kelime__
 ```
 
-Bunun çıktısının
+Bunun çıktısı şu şekilde görünecektir:
 
 **kelime** ya da __kelime__
-
-şeklinde yazılması gerekir. 
 
 #### Metni İtalik Şekilde Yazma
 
@@ -62,11 +59,9 @@ Kelime veya cümlenin italik yazılması için;
 
 şeklinde yazılması gerekir. 
 
-Bunun çıktısının
+Bunun çıktısı şu şekilde görünecektir:
 
 *kelime* ya da _kelime_
-
-şeklinde yazılması gerekir. 
 
 #### Kalın ve İtalik Yazma
 
@@ -142,41 +137,47 @@ Markdown kullanılırken bağlantı eklenmesi isteniyorsa
 
 yazılması durumunda elde edilen çıktı [nature](https://www.nature.com/) şeklinde olacaktır. 
 
-### kod ekleme
+### Kod Ekleme
 
-Markdown kullanırken kod eklenmesi isteniyorsa
+Markdown kullanırken satır içine kod eklenmesi isteniyorsa
 
-```bach
+```
 `kod`
 ```
 
-şeklinde yazılması yeterli olacaktır.
+şeklinde yazılması yeterli olacaktır. Bu bize satır içinde `kod` yazımını sağlayacaktır. 
 
-Örneğin komut satırına
+Eğer kod bloğu eklemek istersek şu karakterleri kullanmalıyız:
 
-```bach
-`kod`
+~~~
 ```
+kod
+```
+~~~
 
-yazıldığı zaman ekranda yazılan çıktı;
+yazıldığı zaman ekranda yazılan çıktı:
 
-`kod` şeklinde olacaktır. 
+```
+kod
+``` 
+
+şeklinde olacaktır. 
 
 ### Tablo ekleme
 
 Tablo eklerken aşağıdaki girdinin çıktısı tablodaki gibi oalcaktır. 
 
-```bach
-|  | x | y |
-|--|:--|--:|
-|a | dld| sls|
-|b | hkh| tyt|
+```markdown
+|    |  x   |  y   |
+|----|:-----|-----:|
+|a   |  dld |  sls |
+|b   |  hkh |  tyt |
 ```
 
-|  | x | y |
-|--|:--|--:|
-|a | dld| sls|
-|b | hkh| tyt|
+|    |  x   |  y   |
+|----|:-----|-----:|
+|a   |  dld |  sls |
+|b   |  hkh |  tyt |
 
 ### Görsel Ekleme
 
