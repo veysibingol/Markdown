@@ -1,7 +1,7 @@
 ---
-Title: "Markdown-kullanımı"
-Author: "Veysi Bingöl"
-Date: "30.01.2024"
+title: "Markdown Kullanımı"
+author: "Veysi Bingöl"
+date: "30/01/2024"
 ---
 
 # Giriş 
