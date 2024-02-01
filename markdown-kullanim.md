@@ -195,7 +195,6 @@ Markdown kullanırken görsel eklenmesi bağlantı ekleme ile benzer bir mantık
 
 yazılması durumunda elde edilecek çıktı
 
-![markdown](https://icons.veryicon.com/png/o/object/material_design_icons/markdown-1.png){ width: 200px }
-
+![markdown](https://icons.veryicon.com/png/o/object/material_design_icons/markdown-1.png)
 
  şeklinde olacaktır. 
