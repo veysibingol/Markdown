@@ -306,3 +306,6 @@ yazıldığı zaman bunun çıktısı;
 <p align="center"><img src="https://diyarbakirhafizasi.org/wp-content/uploads/2020/02/5-1.jpg" alt="çan kulesi" width="500" height="325"></p>
 
 şeklinde olacaktır. 
+
+
+![ole](image-1.png)
