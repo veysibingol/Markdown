@@ -4,7 +4,7 @@ author: "Veysi Bingöl"
 date: "30/01/2024"
 ---
 
-# Giriş 
+# Markdown Kullanımı 
 
 Bu belgede markdown kullanımının öğretilmesi amaçlanmıştır.
 
@@ -195,6 +195,114 @@ Markdown kullanırken görsel eklenmesi bağlantı ekleme ile benzer bir mantık
 
 yazılması durumunda elde edilecek çıktı
 
+
 ![markdown](https://icons.veryicon.com/png/o/object/material_design_icons/markdown-1.png)
 
  şeklinde olacaktır. 
+
+## EK Kullanımlar
+
+### Metni Altı çizili yazma
+
+Markdown kullanırken bir metnin altını çizmek için;
+
+```HTML
+<u> metin </u>
+```
+
+kodu kullanılabilir. 
+
+Örneğin komut satırına `<u> şu an hava güneşli </u>` yazıldığı zaman 
+
+<u> şu an hava güneşli </u>
+
+çıktısı çıkacaktır. 
+
+### Metnin rengini değiştirme
+
+Markdown kullanırken yazı rengini değiştirmek için HTML kullanılabilir. Bunun için komut satırına aşağıdaki kod yazıldığı metinde istenen kelime veya kelime grupları istenen renkle yazılabilir. 
+
+```HTML
+<p style="color:...;">text</p>
+```
+Buna örnek vermek olarak. "Umberto Eco'nun Beş Ahlak Yazısı kitabını şu an okuyorum." cümlesi yeşil renkte yazılsın. Buna göre aşağıdaki komut yazıldığı zaman;
+
+```HTML
+<p style="color:green;">Umberto Eco'nun Beş Ahlak Yazısı kitabını şu an okuyorum.</p>
+```
+çıktısı;
+
+<p style="color:green;">Umberto Eco'nun Beş Ahlak Yazısı kitabını şu an okuyorum.</p> 
+
+şeklinde olacaktır. 
+
+#### Metin rengini kırmızı, yeşil ve mavinin tonlarını karıştırarak yazma (RGB)
+
+Bunun için RGB (red, green, blue) denen format kullanılır. Bunun için komut satırına aşağıdaki komut yazılır. 
+
+```HTML
+<p style="color:rgb(red, green, blue);">text</p>
+```
+
+Burada red, green, blue yazılan yerlere o renklerin tonları yazılacaktır. Şimdi de "Umberto Eco'nun Beş Ahlak Yazısı kitabını şu an okuyorum" cümlesi bu kod ile yazılsın. bunun için kırmızı renk tonu 21, yeşil renk tonu 23, mavi renk tonu da 26 olsun. Öyleyse komut satırına;
+
+```HTML
+<p style="color:rgb(21, 115, 130);">Umberto Eco'nun Beş Ahlak Yazısı kitabını şu an okuyorum.</p>
+```
+
+yazıldığı zaman bunun çıktısı;
+
+<p style="color:rgb(21, 115, 130);">Umberto Eco'nun Beş Ahlak Yazısı kitabını şu an okuyorum.</p>
+
+şeklinde olacaktır. 
+
+### görüntü boyutunu ayarlama
+
+Markdown'da görüntülerin boyutunu değiştirmek için HTML '<img>' etiketi kullanılabilir. ilgili görüntü eklenirken `width` ve `height` özniteliklerini belirterek boyut ayarlanır. Bunun için aşağıdaki kod yazılarak görüntü boyutu istenen şekilde ayarlanır. 
+
+```HTML
+<img src="resim linki" alt="açıklama" width=".." height="..">
+
+```
+
+Örneğin projeye yüksekliği 234, genişliği 148 olan bir fotoğraf eklendiği zaman komut satırına;
+
+```HTML 
+<img src="https://diyarbakirhafizasi.org/wp-content/uploads/2020/03/2.jpg" alt="surp giragos kilisesi" width="148" height="234">
+```
+
+yazıldığı zaman bunun çıktısı;
+
+<img src="https://diyarbakirhafizasi.org/wp-content/uploads/2020/03/2.jpg" alt="surp giragos kilisesi" width="148" height="234">
+
+şeklinde olacaktır. 
+
+### Görüntüyü ortalama
+
+Markdownda bir görüntüyü ortalamak için HTML kullanılır. Bunun için komut satırına;
+
+```HTML
+<p align="center"><img src="resim_linki.jpg" alt="açıklama></p>
+```
+şeklinde bir kod yazılmalıdır. Bunun sonucu olarak resim sayfanın ortasında hizalanmış olur. Bunu bir örnekle pekiştirmek gerekirse komut satırına;
+
+```HTML
+<p align="center"><img src="https://diyarbakirhafizasi.org/wp-content/uploads/2020/02/5-1.jpg" alt="çan kulesi"></p>
+```
+
+yazıldığı zaman bunun çıktısı;
+
+<p align="center"><img src="https://diyarbakirhafizasi.org/wp-content/uploads/2020/02/5-1.jpg" alt="çan kulesi"></p>
+
+şeklinde olacaktır. 
+
+Şimdi de bu görsel hem ortada hizalansın hem de görsel boyutunda bir değişiklik olsun. Bunun için iki kodu birleştirmek mümkündür. Örneğin görselin yüksekliği 500, genişliği de 650 olsun. Bunun için komut satırına
+
+```HTML
+<p align="center"><img src="https://diyarbakirhafizasi.org/wp-content/uploads/2020/02/5-1.jpg" alt="çan kulesi" width="500" height="325"></p>
+```
+yazıldığı zaman bunun çıktısı;
+
+<p align="center"><img src="https://diyarbakirhafizasi.org/wp-content/uploads/2020/02/5-1.jpg" alt="çan kulesi" width="500" height="325"></p>
+
+şeklinde olacaktır. 
