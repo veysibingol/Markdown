@@ -308,4 +308,3 @@ yazıldığı zaman bunun çıktısı;
 şeklinde olacaktır. 
 
 
-![ole](image-1.png)
